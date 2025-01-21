@@ -1,7 +1,7 @@
 import { Button, Input } from '@mui/material';
 import { addTodo } from '../../services/LocalStorage';
 import { useState } from 'react';
-import './Form.module.css';
+import '../../styles/app.css';
 
 export default function Form({ updateTodos }: { updateTodos: () => void }) {
   const [inputValue, setInputValue] = useState('');
