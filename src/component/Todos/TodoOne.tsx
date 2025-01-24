@@ -23,6 +23,10 @@ export default function TodoOne({ todo, updateTodos }: { todo: Todo; updateTodos
         '& .MuiTypography-root': {
           textDecoration: !todo.active ? 'line-through' : 'none',
           opacity: !todo.active ? 0.5 : 1,
+          wordWrap: 'break-word',
+          whiteSpace: 'normal',
+          overflowWrap: 'break-word',
+          wordBreak: 'break-word',
         },
       }}
     />
